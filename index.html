@@ -14,6 +14,11 @@
             href="assets/images/favicon.ico"
             type="image/x-icon"
         />
+        <!-- =============== FONT AWESOME ================ -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
         <!-- =============== STYLES ================ -->
         <link rel="stylesheet" href="dist/css/output.css" />
         <link rel="stylesheet" href="dist/css/styles.css" />
@@ -61,7 +66,7 @@
                                     <img
                                         src="assets/images/map2.png "
                                         alt="map2"
-                                        class="relative bottom-10 h-auto w-full cursor-pointer rounded-lg object-cover transition-transform hover:scale-[1.05]"
+                                        class="relative bottom-6 h-auto w-full cursor-pointer rounded-lg object-cover transition-transform hover:scale-[1.05] md:bottom-8 lg:bottom-10"
                                     />
                                 </div>
                             </div>
@@ -141,7 +146,6 @@
                             </div>
                         </div>
                     </section>
-
                     <!-- Banner -->
                     <figure class="mx-auto w-full px-4">
                         <div
@@ -150,11 +154,11 @@
                             <img
                                 src="assets/images/banner2.png"
                                 alt="banner2"
-                                class="h-auto w-full rounded-md object-cover object-center"
+                                class="h-auto min-h-20 w-full rounded-md object-cover object-center"
                             />
                             <a
                                 href="#"
-                                class="btn font-Creato absolute bottom-4 left-1/2 -translate-x-1/2 transform rounded-full bg-[var(--second-clr)] px-4 py-1 text-center text-sm font-bold text-white transition-all"
+                                class="btn more-btn font-Creato absolute bottom-2 left-1/2 -translate-x-1/2 transform rounded-full bg-[var(--second-clr)] px-4 py-1 text-center text-xs font-bold text-white transition-all md:bottom-4 md:text-sm xl:text-lg"
                             >
                                 MORE ABOUT US
                             </a>
@@ -172,9 +176,11 @@
                             <p class="text-2xl font-medium">(Alur Pemesanan)</p>
                         </div>
                         <div
-                            class="flow font-Creato w-full border-t border-[var(--text-5-clr)] pt-4"
+                            class="flow font-Creato w-full border-l border-[var(--text-5-clr)] pt-4 md:border-t md:border-l-0"
                         >
-                            <ul class="flex flex-row justify-between gap-16">
+                            <ul
+                                class="flex flex-col justify-between gap-16 md:flex-row"
+                            >
                                 <li class="dot relative text-center">
                                     <h3
                                         class="text-xl font-extrabold uppercase"
@@ -221,7 +227,7 @@
                             Terms of Service
                         </h2>
                         <div
-                            class="terms flex flex-row gap-6 border border-[var(--text-3-clr)] px-6 py-4"
+                            class="terms flex flex-col gap-6 border border-[var(--text-3-clr)] px-6 py-4 md:flex-row"
                         >
                             <ul class="flex flex-col gap-4 uppercase">
                                 <li class="plus relative">
@@ -312,7 +318,7 @@
 
                                     <!-- Sample 2.2 -->
                                     <div
-                                        class="relative h-[400px] w-full overflow-hidden rounded-lg shadow-xl"
+                                        class="sample2_2 relative hidden h-[400px] w-full overflow-hidden rounded-lg shadow-xl md:block"
                                     >
                                         <img
                                             src="assets/images/sample2.2.jpeg"
@@ -322,6 +328,177 @@
                                     </div>
                                 </div>
                             </article>
+                        </div>
+                    </section>
+                    <!-- Contact -->
+                    <section
+                        id="contact"
+                        class="mx-auto max-w-5xl rounded-md px-2 py-4 text-[var(--text-3-clr)]"
+                    >
+                        <div
+                            class="overflow-hidden rounded-lg bg-gray-50 shadow-sm"
+                        >
+                            <div class="font-Creato grid md:grid-cols-2">
+                                <!-- Left Column - Contact Info -->
+                                <div
+                                    class="bg-[var(--container-clr)] p-8 md:p-12"
+                                >
+                                    <h2
+                                        class="mb-6 text-5xl font-extrabold text-[var(--text-clr)]"
+                                    >
+                                        Get in touch
+                                    </h2>
+                                    <p
+                                        class="mb-8 text-justify text-[var-(--text-3-clr)]"
+                                    >
+                                        Berkolaborasi dengan Vibesual untuk
+                                        desain visual yang menarik dan
+                                        pengalaman digital yang intuitif. Kami
+                                        spesialis desain grafis dan UI/UX yang
+                                        berfokus pada estetika, fungsionalitas,
+                                        serta pesan yang kuat untuk bisnis,
+                                        organisasi, atau proyek pribadi Anda.
+                                        Hubungi kami, dan wujudkan ide Anda
+                                        bersama tim kreatif yang peduli pada
+                                        detail dan dampaknya.
+                                    </p>
+
+                                    <div class="mt-10 space-y-4">
+                                        <div
+                                            class="flex items-center space-x-3 text-[--text-3-clr]"
+                                        >
+                                            <i
+                                                class="fas fa-school text-lg"
+                                            ></i>
+                                            <div>
+                                                <p>SMK Negeri 4 Padalarang</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center space-x-3 text-[--text-3-clr]"
+                                        >
+                                            <i
+                                                class="fab fas fa-whatsapp text-lg"
+                                            ></i>
+                                            <div>
+                                                <p>+62 812-3456-7890</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center space-x-3 text-[--text-3-clr]"
+                                        >
+                                            <i
+                                                class="fab fas fa-instagram text-lg"
+                                            ></i>
+                                            <div>
+                                                <p>Vibesual</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center space-x-3 text-[--text-3-clr]"
+                                        >
+                                            <i
+                                                class="fas fa-envelope text-lg"
+                                            ></i>
+                                            <div>
+                                                <p>vibesual@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column - Contact Form -->
+                                <div class="bg-white p-8 md:p-12">
+                                    <form class="space-y-6">
+                                        <div
+                                            class="font-Creato grid grid-cols-1 gap-6 text-[var(--text-5-clr)] md:grid-cols-2"
+                                        >
+                                            <div>
+                                                <label
+                                                    for="first-name"
+                                                    class="mb-1 block text-sm font-medium"
+                                                >
+                                                    First name
+                                                </label>
+                                                <input
+                                                    type="text"
+                                                    name="first-name"
+                                                    id="first-name"
+                                                    class="h-12 w-full rounded-md border border-gray-300 px-3 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label
+                                                    for="last-name"
+                                                    class="mb-1 block text-sm font-medium"
+                                                >
+                                                    Last name
+                                                </label>
+                                                <input
+                                                    type="text"
+                                                    name="last-name"
+                                                    id="last-name"
+                                                    class="h-12 w-full rounded-md border border-gray-300 px-3 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label
+                                                for="email"
+                                                class="mb-1 block text-sm font-medium"
+                                            >
+                                                Email
+                                            </label>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                class="h-12 w-full rounded-md border border-gray-300 px-3 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label
+                                                for="phone"
+                                                class="mb-1 block text-sm font-medium"
+                                            >
+                                                Phone number
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                id="phone"
+                                                class="h-12 w-full rounded-md border border-gray-300 px-3 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label
+                                                for="message"
+                                                class="mb-1 block text-sm font-medium"
+                                            >
+                                                Message
+                                            </label>
+                                            <textarea
+                                                id="message"
+                                                name="message"
+                                                rows="4"
+                                                class="max-h-[300px] min-h-12 w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                            ></textarea>
+                                        </div>
+
+                                        <div>
+                                            <button
+                                                type="submit"
+                                                class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
+                                            >
+                                                Send message
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </main>
