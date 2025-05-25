@@ -14,6 +14,12 @@
             href="assets/images/favicon.ico"
             type="image/x-icon"
         />
+        <!-- =============== SWIPER JS ================ -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+        />
+
         <!-- =============== FONT AWESOME ================ -->
         <link
             rel="stylesheet"
@@ -84,7 +90,8 @@
                             </div>
                         </div>
                     </section>
-                    <!-- About We -->
+
+                    <!-- About Us -->
                     <section
                         id="about"
                         class="mx-auto max-w-5xl rounded-md px-2 py-4"
@@ -118,7 +125,7 @@
                                     interaksi pengguna.
                                 </p>
                             </div>
-                            <div class="w-full px-8 md:w-[55%]">
+                            <div class="w-full px-0 md:w-[55%] md:px-8">
                                 <h2
                                     class="mb-4 text-center text-3xl font-extrabold text-[var(--text-3-clr)] uppercase"
                                 >
@@ -146,8 +153,131 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Profile-->
+                    <section
+                        id="profile"
+                        class="mx-auto max-w-5xl rounded-md px-2 py-4 text-[var(--text-3-clr)]"
+                    >
+                        <div class="section-title mb-4 pb-4 text-center">
+                            <h2 class="text-3xl font-extrabold uppercase">
+                                Profile Us
+                            </h2>
+                        </div>
+
+                        <!-- Swiper Container -->
+                        <div
+                            class="swiper min-h-[400px] max-w-[200px] sm:max-w-[400px] md:max-w-[700px] lg:max-w-[1000px]"
+                        >
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <article
+                                    class="swiper-slide card mx-auto flex w-full max-w-xs flex-col overflow-hidden bg-transparent sm:max-w-sm md:max-w-md lg:max-w-lg"
+                                >
+                                    <figure
+                                        class="h-full max-h-[300px] w-full overflow-hidden"
+                                    >
+                                        <img
+                                            src="assets/images/zidan.jpg"
+                                            alt="profile1"
+                                            class="h-auto max-h-[300px] min-h-[300px] w-full cursor-pointer rounded-lg object-cover transition-transform hover:scale-[1.05]"
+                                        />
+                                    </figure>
+
+                                    <div
+                                        class="content flex w-full flex-col px-4 py-2"
+                                    >
+                                        <h3
+                                            class="text-lg text-[var(--text-clr)]"
+                                        >
+                                            M Zidan H
+                                        </h3>
+                                        <p class="text-sm">
+                                            Marketing & Publikasi
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                    class="swiper-slide card mx-auto flex w-full max-w-xs flex-col overflow-hidden bg-transparent sm:max-w-sm md:max-w-md lg:max-w-lg"
+                                >
+                                    <figure
+                                        class="h-full max-h-[300px] w-full overflow-hidden"
+                                    >
+                                        <img
+                                            src="assets/images/hangesa.jpg"
+                                            alt="profile2"
+                                            class="h-auto max-h-[300px] min-h-[300px] w-full cursor-pointer rounded-lg object-cover transition-transform hover:scale-[1.05]"
+                                        />
+                                    </figure>
+
+                                    <div
+                                        class="content flex w-full flex-col px-4 py-2"
+                                    >
+                                        <h3
+                                            class="text-lg text-[var(--text-clr)]"
+                                        >
+                                            Hangesa M.S
+                                        </h3>
+                                        <p class="text-sm">
+                                            Produksi & Customer Service
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                    class="swiper-slide card mx-auto flex w-full max-w-xs flex-col overflow-hidden bg-transparent sm:max-w-sm md:max-w-md lg:max-w-lg"
+                                >
+                                    <figure
+                                        class="h-full max-h-[300px] w-full overflow-hidden"
+                                    >
+                                        <img
+                                            src="assets/images/syahrul.jpg"
+                                            alt="profile3"
+                                            class="h-auto max-h-[300px] min-h-[300px] w-full cursor-pointer rounded-lg object-cover transition-transform hover:scale-[1.05]"
+                                        />
+                                    </figure>
+
+                                    <div
+                                        class="content flex w-full flex-col px-4 py-2"
+                                    >
+                                        <h3
+                                            class="text-lg text-[var(--text-clr)]"
+                                        >
+                                            Syahrul H
+                                        </h3>
+                                        <p class="text-sm">Web Service</p>
+                                    </div>
+                                </article>
+                                <article
+                                    class="swiper-slide card mx-auto flex w-full max-w-xs flex-col overflow-hidden bg-transparent sm:max-w-sm md:max-w-md lg:max-w-lg"
+                                >
+                                    <figure
+                                        class="h-full max-h-[300px] w-full overflow-hidden"
+                                    >
+                                        <img
+                                            src="assets/images/iky.jpg"
+                                            alt="profile4"
+                                            class="h-auto max-h-[300px] min-h-[300px] w-full cursor-pointer rounded-lg object-cover transition-transform hover:scale-[1.05]"
+                                        />
+                                    </figure>
+
+                                    <div
+                                        class="content flex w-full flex-col px-4 py-2"
+                                    >
+                                        <h3
+                                            class="text-lg text-[var(--text-clr)]"
+                                        >
+                                            Rizky A.K
+                                        </h3>
+                                        <p class="text-sm">Dokumentasi</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </section>
                     <!-- Banner -->
-                    <figure class="mx-auto w-full px-4">
+                    <figure class="mx-auto w-full px-0 md:px-4">
                         <div
                             class="relative rounded-md border border-[var(--border-clr)] bg-[var(--container-clr)] shadow-lg transition-shadow hover:shadow-2xl"
                         >
@@ -265,69 +395,110 @@
                     <!-- Sample Project -->
                     <section
                         id="sample"
-                        class="mx-auto max-w-5xl rounded-md px-2 py-4 text-[var(--text-3-clr)]"
+                        class="mx-auto w-full max-w-5xl rounded-md px-2 py-4 text-[var(--text-3-clr)]"
                     >
                         <h2
                             class="mb-8 text-center text-3xl font-extrabold uppercase md:mb-12"
                         >
                             Sample Project
                         </h2>
-                        <div class="flex flex-col gap-8 md:flex-row md:gap-8">
-                            <!-- Sample 1 -->
-                            <article class="flex w-full flex-col md:w-[45%]">
-                                <header class="mb-6">
-                                    <h3
-                                        class="text-center text-2xl font-extrabold uppercase md:text-3xl"
-                                    >
-                                        X HEADER
-                                    </h3>
-                                </header>
+                        <div class="flex w-full flex-col gap-4">
+                            <!-- Grid 1: 2-1-1 layout on desktop, stacked on mobile
+                            <div
+                                class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+                            >
                                 <div
-                                    class="relative h-[400px] overflow-hidden rounded-lg shadow-xl"
+                                    class="col-span-1 flex aspect-video h-auto max-h-40 w-full items-center justify-center rounded-lg bg-gray-800 text-white sm:col-span-2 lg:col-span-2"
+                                >
+                                    <p class="text-sm font-medium">496 x 160</p>
+                                </div>
+                                <div
+                                    class="flex aspect-square h-auto max-h-40 w-full items-center justify-center rounded-lg bg-gray-800 text-white sm:aspect-video lg:aspect-square"
+                                >
+                                    <p class="text-sm font-medium">240 x 160</p>
+                                </div>
+                                <div
+                                    class="flex aspect-square h-auto max-h-40 w-full items-center justify-center rounded-lg bg-gray-800 text-white sm:aspect-video lg:aspect-square"
+                                >
+                                    <p class="text-sm font-medium">240 x 160</p>
+                                </div>
+                            </div> -->
+
+                            <!-- Grid 2: Complex layout with large image and smaller ones -->
+                            <div
+                                class="grid min-h-[300px] w-full grid-cols-1 gap-4 sm:grid-cols-2 sm:grid-rows-3 md:min-h-[400px] lg:grid-cols-4 lg:grid-rows-2"
+                            >
+                                <!-- Large main image -->
+                                <div
+                                    class="relative flex max-h-[400px] w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800 text-white sm:col-span-2 sm:row-span-2 lg:col-span-3 lg:row-span-2"
+                                >
+                                    <img
+                                        src="assets/images/keychain.png"
+                                        alt="Main keychain product"
+                                        class="h-full w-full cursor-pointer rounded-lg object-cover object-center transition-transform hover:scale-[1.05]"
+                                    />
+                                </div>
+
+                                <!-- Top right image -->
+                                <div
+                                    class="flex max-h-[190px] w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800 text-white sm:col-span-1 sm:row-span-1 lg:col-span-1 lg:row-span-1"
+                                >
+                                    <img
+                                        src="assets/images/keychain2.png"
+                                        alt="Keychain detail 1"
+                                        class="h-full w-full cursor-pointer rounded-lg object-cover object-center transition-transform hover:scale-[1.05]"
+                                    />
+                                </div>
+
+                                <!-- Bottom right image -->
+                                <div
+                                    class="flex max-h-[190px] w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800 text-white sm:col-span-1 sm:row-span-1 lg:col-span-1 lg:row-span-1"
+                                >
+                                    <img
+                                        src="assets/images/keychain3.png"
+                                        alt="Keychain detail 2"
+                                        class="h-full w-full cursor-pointer rounded-lg object-cover object-center transition-transform hover:scale-[1.05]"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Grid 3: 1-1-2 layout -->
+                            <div
+                                class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+                            >
+                                <!-- First small image -->
+                                <div
+                                    class="flex aspect-square h-auto w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800 text-white sm:aspect-[4/3] lg:aspect-square"
+                                >
+                                    <img
+                                        src="assets/images/sample2.jpeg"
+                                        alt="Product sample 1"
+                                        class="h-full w-full cursor-pointer rounded-lg object-cover object-top transition-transform hover:scale-[1.05]"
+                                    />
+                                </div>
+
+                                <!-- Second small image -->
+                                <div
+                                    class="flex aspect-square h-auto w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800 text-white sm:aspect-[4/3] lg:aspect-square"
+                                >
+                                    <img
+                                        src="assets/images/sample2.2.jpeg"
+                                        alt="Product sample 2"
+                                        class="h-full w-full cursor-pointer rounded-lg object-cover object-top transition-transform hover:scale-[1.05]"
+                                    />
+                                </div>
+
+                                <!-- Large wide image -->
+                                <div
+                                    class="flex aspect-video h-auto max-h-[240px] w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800 text-white sm:col-span-2 lg:col-span-2"
                                 >
                                     <img
                                         src="assets/images/sample1.jpg"
-                                        alt="sample1"
-                                        class="h-full w-full cursor-pointer object-cover transition-transform hover:scale-[1.05]"
+                                        alt="Product showcase"
+                                        class="h-full w-full cursor-pointer rounded-lg object-cover object-top transition-transform hover:scale-[1.05]"
                                     />
                                 </div>
-                            </article>
-
-                            <!-- Sample 2 -->
-                            <article class="flex w-full flex-col md:w-[55%]">
-                                <header class="mb-6">
-                                    <h3
-                                        class="text-center text-2xl font-extrabold uppercase md:text-3xl"
-                                    >
-                                        POSTER
-                                    </h3>
-                                </header>
-
-                                <!-- Dua gambar dalam satu baris -->
-                                <div class="flex gap-2">
-                                    <!-- Sample 2 -->
-                                    <div
-                                        class="relative h-[400px] w-full overflow-hidden rounded-lg shadow-xl"
-                                    >
-                                        <img
-                                            src="assets/images/sample2.jpeg"
-                                            alt="Sample 2"
-                                            class="h-full w-full cursor-pointer object-cover transition-transform hover:scale-[1.05]"
-                                        />
-                                    </div>
-
-                                    <!-- Sample 2.2 -->
-                                    <div
-                                        class="sample2_2 relative hidden h-[400px] w-full overflow-hidden rounded-lg shadow-xl md:block"
-                                    >
-                                        <img
-                                            src="assets/images/sample2.2.jpeg"
-                                            alt="Sample 2.2"
-                                            class="h-full w-full cursor-pointer object-cover transition-transform hover:scale-[1.05]"
-                                        />
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
                         </div>
                     </section>
                     <!-- Contact -->
@@ -364,8 +535,10 @@
                                     </p>
 
                                     <div class="mt-10 space-y-4">
-                                        <div
-                                            class="flex items-center space-x-3 text-[--text-3-clr]"
+                                        <a
+                                            href="https://www.google.com/search?q=smkn+4+padalarang"
+                                            target="_blank"
+                                            class="flex items-center space-x-3 text-[--text-3-clr] hover:underline"
                                         >
                                             <i
                                                 class="fas fa-school text-lg"
@@ -373,17 +546,20 @@
                                             <div>
                                                 <p>SMK Negeri 4 Padalarang</p>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="flex items-center space-x-3 text-[--text-3-clr]"
+                                        </a>
+                                        <a
+                                            class="flex items-center space-x-3 text-[--text-3-clr] hover:underline"
+                                            href="https://wa.me/6285524596612?text=Halo Min saya ingin tanya tentang prdouknya dong"
+                                            rel="noopener noreferrer"
+                                            target="_blank"
                                         >
                                             <i
                                                 class="fab fas fa-whatsapp text-lg"
                                             ></i>
                                             <div>
-                                                <p>+62 812-3456-7890</p>
+                                                <p>+62 855-2459-6612</p>
                                             </div>
-                                        </div>
+                                        </a>
                                         <div
                                             class="flex items-center space-x-3 text-[--text-3-clr]"
                                         >
@@ -409,7 +585,10 @@
 
                                 <!-- Right Column - Contact Form -->
                                 <div class="bg-white p-8 md:p-12">
-                                    <form class="space-y-6">
+                                    <form
+                                        class="relative space-y-6"
+                                        id="contact-form"
+                                    >
                                         <div
                                             class="font-Creato grid grid-cols-1 gap-6 text-[var(--text-5-clr)] md:grid-cols-2"
                                         >
@@ -491,11 +670,24 @@
                                         <div>
                                             <button
                                                 type="submit"
-                                                class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
+                                                class="group relative inline-flex cursor-pointer justify-center overflow-hidden rounded-md border border-[var(--text-clr)] bg-transparent px-6 py-3 text-base font-bold text-[var(--text-clr)] shadow-sm focus:outline-none"
                                             >
-                                                Send message
+                                                <!-- Teks di atas layer hover -->
+                                                <span
+                                                    class="relative z-10 group-hover:text-(--text-4-clr)"
+                                                    >Send message</span
+                                                >
+
+                                                <!-- Layer hover yang akan di-scale dari atas ke bawah -->
+                                                <span
+                                                    class="absolute inset-0 origin-top scale-y-0 bg-(--text-2-clr) transition-transform duration-300 ease-out group-hover:scale-y-100"
+                                                ></span>
                                             </button>
                                         </div>
+                                        <p
+                                            class="contact__message absolute -bottom-8 left-0 text-sm font-semibold text-(--text-3-clr)"
+                                            id="contact-message"
+                                        ></p>
                                     </form>
                                 </div>
                             </div>
@@ -512,10 +704,24 @@
                         copyright &copy; 2025 Vibesual All Right reserved
                     </div>
                 </footer>
+
+                <!--========== SCROLL UP ==========-->
+                <a
+                    href="#"
+                    class="scrollup fixed right-4 z-10 inline-flex rounded bg-white p-3 text-lg text-(--text-4-clr) transition-all"
+                    id="scroll-up"
+                >
+                    <i class="fas fa-arrow-up"></i>
+                </a>
             </div>
         </div>
 
         <!-- =============== SCRIPTS ================ -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
         <script src="dist/js/script.js"></script>
     </body>
 </html>

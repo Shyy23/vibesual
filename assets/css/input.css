@@ -44,6 +44,10 @@
     --text-4-clr: rgba(85, 85, 85, 1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .font-Creato {
     font-family: var(--main-font);
 }
@@ -77,69 +81,55 @@
     animation: jelly 0.9s both;
 }
 
-.contact-social {
-    display: flex;
-    align-items: center;
-    color: var(--text-3-clr);
-    transition: color 500s ease-in-out;
-}
+/* Slides */
 
-.contact-social:hover {
-    color: white;
-}
-
-.contact-social__icon {
-    position: relative;
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
-    overflow: hidden;
+.swiper-slide {
     text-align: center;
-    border-radius: 50% 0 50% 0;
-    transition: color 0.4s;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    min-height: 300px;
 }
 
-.contact-social__icon i {
-    position: relative;
-    transition: transform 500s ease-in-out;
-    z-index: 3;
-    color: var(--black-color);
+/* Pagination Styles */
+.swiper-pagination {
+    position: static !important;
+    margin-top: 20px;
 }
 
-.contact-social:hover .contact-social__icon i {
-    color: white;
-    transform: rotateY(360deg);
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: #d1d5db !important;
+    opacity: 1 !important;
+    margin: 0 6px !important;
+    transition: all 0.3s ease;
 }
 
-.contact-social__icon::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    top: 100%;
-    transition: 0.5s;
-    z-index: 2;
+.swiper-pagination-bullet-active {
+    background: #3b82f6 !important;
+    transform: scale(1.2);
 }
 
-/* Warna khusus untuk setiap item */
-.contact-social:nth-child(1) .contact-social__icon::before {
-    background: linear-gradient(45deg, #1a5f1a, #25d366, #0d8a0d);
-}
-.contact-social:nth-child(2) .contact-social__icon::before {
-    background-color: #25d366;
-}
-.contact-social:nth-child(3) .contact-social__icon::before {
-    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-}
-.contact-social:nth-child(4) .contact-social__icon::before {
-    background-color: #ea4335;
+/* ================= SCROLL UP ====================== */
+.scrollup {
+    bottom: -50%;
+    box-shadow: 0 4px 16px hsla(255, 90%, 8%, 0.15);
 }
 
-.contact-social:hover .contact-social__icon::before {
-    top: 0;
+.scrollup:hover {
+    transform: translateY(-0.5rem);
 }
-
+/* Show Scroll Up */
+.show-scroll {
+    bottom: 3rem;
+}
 @keyframes jelly {
     0% {
         transform: scale3d(1, 1, 1);
